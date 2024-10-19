@@ -1,0 +1,16 @@
+Строки:
+    strcmp(s1, s1) стравнивает строки, в случае совпадения возвращает 0
+    strncpy(*s, str + left, right-left); копирует строку в s с ячейки памяти str + left длиной right - left
+    strip(char* str) удаляет нули в начале и конце строки
+    count(char* str, char target)
+    len(char *str)
+    del(char* str, char target) удаляет все одинаковые символы, которые идут друг за другом
+    split(char* str, char ch, int* count) возвращает массив строк, разделяет по символу ch, count - переменная в которую записывается длина выходного массива
+
+Файлы:
+    fopen("name", "format")
+    fclose("name")
+    fgetc("file_name") считывает каждый символ в файле
+    EOF конец файла
+    fputc(char, "file_name") вводит по одному символу
+    rewind("file_name") переводит указатель на начало файла

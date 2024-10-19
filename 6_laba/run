@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "Использование: $0 <название_файла_без_расширения>"
+    exit 1
+fi
+
+FILENAME=$1
+
+g++ -c "$FILENAME.cpp"
+g++ "$FILENAME.o" -o "$FILENAME-app" -lsfml-graphics -lsfml-window -lsfml-system
+./"$FILENAME-app"
